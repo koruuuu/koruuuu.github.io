@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<!--
+This website was heavily inspired by https://nandi.pw/ , credits to them, I did nothing.
+(discord: @nandi)
+-->
+<head>
+    <title>k o r u</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/fav.ico2.png" />
+    <meta name="author" content="k o r u">
+    <meta name="description" content="✦　˚　.　　˚　✦ ˚
+    　.　˚　. ✦　.
+    　　✦　 ✦　　˚　　.">
+    <meta property="og:image" content="https://64.media.tumblr.com/3a4ecea2d76ec116ff3f81e64ad49ae8/tumblr_pih3armAuV1ub0d8zo5_r1_250.png">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/modal.css">
+    <!--<link rel="stylesheet" type="text/javascript" href="assets/mute.js">-->
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- icon font feathericons.com -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css" rel="stylesheet">
+    <!-- clipboard button -->
+    <script>
+        function showCustomAlert(message) {
+            var alertBox = document.createElement('div');
+            alertBox.className = 'custom-alert';
+            alertBox.innerHTML = '<i class="iconsax" icon-name="copy-tick"></i>' + message;
+
+
+            document.body.appendChild(alertBox);
+
+
+            setTimeout(function() {
+                alertBox.classList.add('show');
+            }, 10);
+
+
+            setTimeout(function() {
+                alertBox.classList.remove('show');
+                // Remove the element from the DOM after it has faded out
+                setTimeout(function() {
+                    document.body.removeChild(alertBox);
+                }, 500);
+            }, 2000);
+        }
+
+        function CopyMe(TextToCopy) {
+            var TempText = document.createElement("input");
+            TempText.value = TextToCopy;
+            document.body.appendChild(TempText);
+            TempText.select();
+            document.execCommand("copy");
+            document.body.removeChild(TempText);
+
+            showCustomAlert("Copied: " + TextToCopy);
+        }
+    </script>
+    <!-- tooltips -->
+    <script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+    <script src="assets/tooltips.js"></script>
+    <!-- icons -->
+    <link href="https://iconsax.gitlab.io/i/icons.css" rel="stylesheet">
+</head>
+<body id="fade">
+<!-- start of container -->
+<div class="container">
+    <!--<div class="slimeslide">
+        <img class="slime" src="graphics/5ba28b.webp">
+    </div>-->
+    <!-- left sidenav -->
+    <div class="side-nav">
+        <a title="unmute" class=""><i class="iconsax" icon-name="volume-high" id="ASong" onClick="playPause()">
+            <audio src="assets/keyvslocket-carpe%20diem%20avem.mp3" autoplay loop></audio></i></a>
+        <script>
+            var aud = document.getElementById("ASong").children[0];
+            aud.volume = 0.15;
+            var isPlaying = false;
+            aud.pause();
+
+            function playPause() {
+            if (isPlaying) {
+            aud.pause();
+            } else {
+            aud.play();
+            }
+            isPlaying = !isPlaying;
+            }
+        </script>
+    </div>
+    <!-- left sidebar -->
+    <div class="sidebar">
+        <img src="https://media1.tenor.com/m/NRJLKU_Rk4IAAAAd/kogami-akira-akira-kogami.gif" class="sidebar-icon">
+        <!-- left sidebar icon -->
+        <p>
+        <h2>
+            <br>ｋｏｒｕ
+        </h2>
+        <div class="sidebar-links">
+            <!--<a href="#portfolio"><i class="iconsax" icon-name="picture"></i>portfolio</a>-->
+            <a href="#about"><i class="iconsax" icon-name="user-2"></i>about</a>
+            <a href="#links"><i class="iconsax" icon-name="link-2"></i>links</a>
+            <!--<a href="#journal"><i class="iconsax" icon-name="note-text"></i>journal</a>-->
+            <a href="#music"><i class="iconsax" icon-name="music-list"></i>playlists</a>
+            <!--<a href="#contact"><i class="iconsax" icon-name="mail"></i>contact </a>-->
+            <a href="https://koruu.atabook.org" target="_blank" rel="noopener noreferrer"><i class="iconsax" icon-name="book-open"></i>guestbook</a>
+        </div>
+    </div>
+    <!-- end left sidebar -->
+    <!-- PAGE CONTENT -->
+    <div class="content">
+        <!-- portfolio -->
+        <!-- no portfolio yet ig -->
+        <!-- end portfolio -->
+        <!-- about -->
+        <div class="content-block" id="about">
+            <div class="about-title">about me</div>
+            <div class="about-text"> math & tech nerd who likes learning how things work <br> i also play games (im bad at them) <br>
+                <br>
+                <h2>interests</h2>
+                <div class="thread-tags">
+                    <i>robotics</i>
+                    <i>math</i>
+                    <i>music</i>
+                    <i>hiking</i>
+                    <i>sports</i>
+                    <i>tech</i>
+                    <i>space</i>
+                </div>
+                <br>
+                <h2>hobbies</h2>
+                <div class="thread-tags">
+                    <i>listening to music</i>
+                    <i>exercising</i>
+                    <i>fps games</i>
+                    <i>cooking</i>
+                    <i>sleeping</i>
+                </div>
+                <br>
+                <!--<h2>s/o</h2>
+                <marquee class="marquee" behavior="scroll" direction="left" scrollamount="4">1 ● 2 ● 3 ● 4 ● 5 ● 6 ● 7 ● 8 ● 9 ● 1 ● 2 ● 3</marquee>-->
+            </div>
+            <div class="about-stats">
+                <div class="about-stat">
+                    <b>name</b>
+                    <p>koru</p>
+                </div>
+                <div class="about-stat">
+                    <b>location</b>
+                    <p>madrid, esp</p>
+                </div>
+                <div class="about-stat">
+                    <b>career</b>
+                    <p>swe student</p>
+                </div>
+            </div>
+            <div class="about-img" style="background-image:url('https://media1.tenor.com/m/d2XhG8dWh0gAAAAd/sleep-cute.gif');"></div>
+        </div>
+        <!-- end about -->
+        <!-- contact -->
+        <!-- I guess I am supposed to put something here ? : -->
+        <!-- end contact -->
+        <!-- contact success-->
+        <!-- end contact success -->
+        <!-- music -->
+        <div class="content-block" id="music">
+            <div class="threads-title"> albums i love </div>
+            <div class="threads-tracker">
+                <div class="thread">
+                    <!-- Playlist -->
+                    <h2>
+                        <font color="#CEE5ED">gingerbee - apiary</font>
+                    </h2>
+                    <p>say the rest is goated</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/09cVN2phRh84MiWZ7lszU4?si=XuYLzaErQqaeAkjuId8nOQ" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>emo</i>
+                        <i>screamo</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                        <font color="#CEE5ED">i love susquatch</font>
+                    </h2>
+                    <p>susquatch my beloved</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/artist/5MNNV4jwu51bxwel7fz9BO?si=Ay_XuyonRfmMTiytjGyiOQ" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>math rock</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                        <font color="#CEE5ED">twin fantasy</font>
+                    </h2>
+                    <p>imagine listening to csh</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/6gDtROOIYa6OQxwhDNkDRM?si=lnwqH7o0Rbms7z4H1EJ0SQ" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>indie rock</i>
+                        <i>gay</i>
+                        <i>furry</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                        <font color="#CEE5ED">key vs. locket - i felt like a sketch</font>
+                    </h2>
+                    <p>really beautiful album overall</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/2F9SCxkzsUQMU5Iw2aM2Qt?si=EyR0v8zvTjGnOQt6PaPLMg" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>midwest emo</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                        <font color="#CEE5ED">the first glass beach album</font>
+                    </h2>
+                    <p>because no one who loves you should make you feel unsafe</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/5GOoswCqZQiq9gbjSHkzMq?si=Kp50dARIT323cuNHwI_u8Q" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>indie rock</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                            <font color="#CEE5ED">wake</font>
+                    </h2>
+                    <p>hail the sun is such a goated band</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/3OiDWBs3h3OdroFZYGyNNB?si=ZXX5UfmCT_CSmlzK8y_YUA" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>post-hardcore</i>
+                        <i>math rock</i>
+                        <i>progressive rock</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                        <font color="#CEE5ED">ants from up there</font>
+                    </h2>
+                    <p>only last songs are actually good tbh</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/21xp7NdU1ajmO1CX0w2Egd?si=FORwpRzHTkqQoxk-H0V0zw" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>art rock</i>
+                        <i>post rock</i>
+                        <i>alt rock</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                        <font color="#CEE5ED">nightmare</font>
+                    </h2>
+                    <p>danger line is top 3 best metal songs</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/7vfuTRXIAYJz5Uc8SddnTr?si=h8jrO26VSuWQwlqDFPP_ug" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>heavy metal</i>
+                    </div>
+                    <br>
+                    <!-- playlist -->
+                    <h2>
+                            <font color="#CEE5ED">tarot</font>
+                    </h2>
+                    <p>THE SUN ☀ THE MOON 🌙 THE STARS ⭐
+                        SHINE LESS BRIGHTLY ✨ WITH YOU SO FAR 👫</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/album/2QFew4zGb4RNsuW3KF39ev?si=GANFqNzjSoaUgde6ooD93A" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="thread-tags">
+                        <i>melodic death metal</i>
+                    </div>
+                    <br>
+                    <!-- playlist info -->
+                </div>
+            </div>
+            <div class="threads-todo-title"> info </div>
+            <div class="threads-todo">
+                <br> please send me cool music
+                <h3>fav genres</h3>
+                <ul>
+                    <li>
+                        <div class="checked">
+                            <i data-feather="check"></i>
+                        </div>
+                        <span> math rock </span>
+                    <li>
+                    <div class="checked">
+                        <i data-feather="check"></i>
+                    </div>
+                        <span> rock </span>
+                    <li>
+                    <div class="checked">
+                    <i data-feather="check"></i>
+                    </div>
+                        <span> indie rock </span>
+                    <li>
+                    <div class="checked">
+                        <i data-feather="check"></i>
+                    </div>
+                        <span> metal </span>
+                    <li>
+                        <div class="checked">
+                            <i data-feather="check"></i>
+                        </div>
+                        <span> midwest emo </span>
+                </ul>
+            </div>
+        </div>
+        <!-- end music -->
+        <!-- journal -->
+        <!-- no journal, i will never keep it updated)) -->
+        <!-- end journal -->
+        <!-- links -->
+        <div class="content-block" id="links">
+            <div class="con-title"> links </div>
+            <div class="con-content">
+                <br>
+                <div class="sidebar-links2">
+                    <br>
+                    <!--<a href="giturl"><i class="iconsax" icon-name="code-1"></i>github </a>-->
+                    <!-- tbh idrk if i should put my github, its really personal :p-->
+                    <a href="https://steamcommunity.com/id/koru_u/" target="_blank" rel="noopener noreferrer"><i class="iconsax" icon-name="game-controller"></i>steam </a>
+                    <a href="javascript:CopyMe('koru_u')"><i class="iconsax" icon-name="phone"></i>discord </a>
+                    <a href="https://www.last.fm/user/Floofiee" target="_blank" rel="noopener noreferrer"><i class="iconsax" icon-name="music-list"></i>last.fm </a>
+                    <a href="https://open.spotify.com/user/byjesuz-?si=3408216c9eba4958" target="_blank" rel="noopener noreferrer"><i class="iconsax" icon-name="music"></i>spotify</a>
+                </div>
+            </div>
+            <div class="con-img" style="background-image:url('assets/connected-more-csh-fanart-for-u-guysss-v0-mfrfkvga0zgc1.webp');"></div>
+        </div>
+        <!-- end links -->
+        <!-- img modal -->
+        <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+        </div>
+        <!-- modal script -->
+        <script type="text/javascript" src="assets/modal.js"></script>
+    </div>
+    <!-- END PAGE CONTENT -->
+</div>
+<!-- end of container -->
+<!-- footer -->
+<!-- background -->
+<video id="vid" preload playsinline autoplay muted loop>
+    <source src="graphics/3499682719_preview_Dark.mp4" type="video/mp4">
+    <script>document.getElementById("vid").volume = 0.15;</script>
+</video>
+</body>
+</html>
