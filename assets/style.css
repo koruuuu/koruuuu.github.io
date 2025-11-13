@@ -1,13 +1,13 @@
 /* --- theme options --- */
 :root {
-    --background:#171A24; /* New Very Dark Blue */
-    --border:#11131b; /* New Darker Border */
-    --text:#CEE5ED; /* Kept Original Light Text */
-    --container:#232C3A; /* New Darker Blue/Slate */
-    --text-bg:#1D242E; /* New Dark Blue/Charcoal */
-    --accent:#89DCEB; /* New Bright Cyan/Electric Blue Accent */
-    --tags:#B4DCEB; /* New Light Blue for Tags */
-    --tags-bg:#000000; /* Kept Black */
+    --background:#171A24;
+    --border:#11131b;
+    --text:#CEE5ED;
+    --container:#232C3A;
+    --text-bg:#1D242E;
+    --accent:#89DCEB;
+    --tags:#B4DCEB;
+    --tags-bg:#000000;
 
     --font-size:13px;
 }
@@ -834,12 +834,12 @@ animation: fadein 2s;
     position: fixed;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%) translateY(20px); /* Initially off-screen */
-    z-index: 10000; /* Above everything else */
+    transform: translateX(-50%) translateY(20px);
+    z-index: 10000;
     padding: 10px 20px;
-    background-color: var(--text-bg); /* Dark background from theme */
-    color: var(--accent); /* Accent text color */
-    border: 1px solid var(--accent); /* Border with accent color */
+    background-color: var(--text-bg);
+    color: var(--accent);
+    border: 1px solid var(--accent);
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     font-size: var(--font-size);
@@ -851,22 +851,15 @@ animation: fadein 2s;
 
 .custom-alert.show {
     opacity: 1;
-    transform: translateX(-50%) translateY(-20px); /* Move into view */
+    transform: translateX(-50%) translateY(-20px);
 }
 
-/* Style the icon inside the alert (optional but nice) */
 .custom-alert .iconsax {
     margin-right: 8px;
     font-size: 1.2em;
 }
 
-/* =========================================================================
-   FINAL MOBILE RESPONSIVENESS (<= 950px)
-   Includes fixes for header scrollbar and music section layout.
-   ========================================================================= */
-
 @media screen and (max-width: 950px) {
-    /* 0. Critical Fixes for Horizontal Overflow on the whole page */
     html, body {
         overflow-x: hidden;
         min-height: 100vh;
@@ -881,17 +874,15 @@ animation: fadein 2s;
         cursor: pointer;
     }
 
-    /* 1. Background Fixes */
     #vid {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%; /* Using 100% instead of 100vw to prevent small overflows */
+        width: 100%;
         height: 100vh;
         object-fit: cover;
     }
 
-    /* 2. Main Container: Fixed for overflow, full width, and proper height */
     .container {
         position: static;
         width: 100%;
@@ -904,17 +895,14 @@ animation: fadein 2s;
         min-width: 320px;
         padding-top: 40px;
         box-sizing: border-box;
-
-        /* ULTIMATE OVERFLOW FIX: Hides any content bleed within the main container */
         overflow-x: hidden;
     }
 
-    /* 3. Side Navigation (Fixed Top Bar) */
     .side-nav {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%; /* Full width */
+        width: 100%;
         height: 40px;
         background-color: var(--text-bg);
         border-radius: 0;
@@ -933,7 +921,6 @@ animation: fadein 2s;
         width: auto;
     }
 
-    /* 4. Sidebar: Convert to a full-width header block */
     .sidebar {
         position: static;
         width: 100%;
@@ -943,7 +930,7 @@ animation: fadein 2s;
         border-radius: 0;
         text-align: center;
         box-sizing: border-box;
-        overflow-x: hidden; /* Hides any horizontal overflow in the link section */
+        overflow-x: hidden;
     }
 
     img.sidebar-icon {
@@ -957,7 +944,6 @@ animation: fadein 2s;
         margin-bottom: 20px;
     }
 
-    /* Convert sidebar links to horizontal buttons */
     .sidebar-links {
         margin: 0;
         width: 100%;
@@ -982,7 +968,6 @@ animation: fadein 2s;
         margin-right: 8px;
     }
 
-    /* 5. Content Area: Static flow */
     .content {
         position: static;
         width: 100%;
@@ -1001,9 +986,6 @@ animation: fadein 2s;
         box-sizing: border-box;
     }
 
-    /* 6. Content Blocks (Titles and Text) - Static Flow & Full Width */
-
-    /* Titles */
     .about-title,
     .threads-title,
     .threads-todo-title,
@@ -1018,7 +1000,6 @@ animation: fadein 2s;
         box-sizing: border-box;
     }
 
-    /* Text Blocks */
     .about-text,
     .threads-tracker,
     .threads-todo,
@@ -1033,31 +1014,25 @@ animation: fadein 2s;
         box-sizing: border-box;
     }
 
-    /* --- MUSIC SECTION IMPROVEMENT (ALBUMS) --- */
-
     .threads-title {
         border-radius: 8px 8px 0 0;
         margin-bottom: 0;
     }
 
     .threads-tracker {
-        /* Remove the padding from the wrapper, handle it in the threads instead */
         padding: 0;
         border-radius: 0 0 8px 8px;
         margin-bottom: 20px;
     }
 
     .thread {
-        /* Add back vertical padding for each album and add internal border */
         padding: 15px;
         border-bottom: 1px solid var(--border);
     }
 
     .thread:last-of-type {
-        border-bottom: none; /* No border after the last album */
+        border-bottom: none;
     }
-
-    /* --- END MUSIC SECTION --- */
 
     .threads-todo-title {
         margin-top: 10px;
@@ -1070,7 +1045,6 @@ animation: fadein 2s;
         margin-bottom: 20px;
     }
 
-    /* About Content Positioning */
     .about-title {
         width: 100%;
         border-radius: 8px 8px 0px 0px;
@@ -1081,7 +1055,6 @@ animation: fadein 2s;
         margin-bottom: 20px;
     }
 
-    /* About Image (Full Width, Fixed Height) */
     .about-img {
         position: static;
         width: 100%;
@@ -1091,7 +1064,6 @@ animation: fadein 2s;
         background-size: cover;
     }
 
-    /* About Stats (Full Width) */
     .about-stats {
         position: static;
         width: 100%;
@@ -1100,7 +1072,6 @@ animation: fadein 2s;
         margin-bottom: 20px;
     }
 
-    /* Links Section Adjustments */
     .con-title {
         border-radius: 8px 8px 0px 0px;
     }
@@ -1143,7 +1114,6 @@ animation: fadein 2s;
         margin-right: 15px;
     }
 
-    /* Spotify embeds need better spacing */
     iframe {
         margin-top: 10px;
         margin-bottom: 10px;
