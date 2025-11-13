@@ -861,7 +861,6 @@ animation: fadein 2s;
 
 @media screen and (max-width: 950px) {
     html, body {
-        overflow-x: hidden;
         min-height: 100vh;
         height: auto;
     }
@@ -895,15 +894,17 @@ animation: fadein 2s;
         min-width: 320px;
         padding-top: 40px;
         box-sizing: border-box;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .side-nav {
+        overflow: hidden;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 40px;
+        padding: 0 15px;
         background-color: var(--text-bg);
         border-radius: 0;
         z-index: 999;
@@ -914,11 +915,12 @@ animation: fadein 2s;
 
     .side-nav a {
         position: absolute;
-        top: 5px;
+        top: 50%;
         right: 15px;
         color: var(--accent);
         background-color: transparent;
         width: auto;
+        transform: translateY(-50%);
     }
 
     .sidebar {
@@ -930,7 +932,7 @@ animation: fadein 2s;
         border-radius: 0;
         text-align: center;
         box-sizing: border-box;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     img.sidebar-icon {
