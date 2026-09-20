@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Koru</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./Images/faviconkoru.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="info">
+        <!-- This is for just info that is being handled (Debug porpuses) -->
+    </div>
+
+    <!-- 3D Body (Planets and such) -->
+    <div id="experience">
+
+        <canvas id="experience-canvas"></canvas>
+
+        <!-- Intro text -->
+        <div id="intro-text">
+            Koru
+
+            <div id="intro-text-description">
+                - Software Engineer -
+            </div>
+        </div>
+
+    </div>
+
+    <!--
+        For some reason if i don't add this
+        for the scrolling it doesnt work and it looks
+        really odd
+    -->
+    <div id="scroll-spacer"></div>
+
+    <!-- Import map Three.js -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- Main JS file -->
+    <script type="module" src="./JavaScriptFiles/main.js"></script>
+
+</body>
+
+</html>

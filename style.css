@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: none; 
+}
+
+html::-webkit-scrollbar {
+    display: none; 
+}
+
+body {
+    background-color: #222;
+    margin: 0;
+}
+
+#experience {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#experience-canvas {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 6px;
+
+    z-index: 10;
+}
+
+#intro-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+
+    font-size: 9rem;
+    color: #ffd60a;
+    font-family: 'Fredoka', sans-serif;
+    
+    font-weight: 700; 
+}
+
+
+#intro-text-description {
+    font-size: 1.2rem;
+
+    color: #aaaaaa;
+
+    font-family: sans-serif;
+    font-weight: 400;
+
+    margin-top: 0.5rem;
+
+    letter-spacing: 1px;
+}
+
+#scroll-spacer {
+    height: 1200vh;
+    width: 100%;
+
+    pointer-events: none;
+}
+
+#dialogue-text .highlight-name {
+    color: #ffca3a; 
+    font-weight: bold;
+}
