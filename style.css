@@ -82,7 +82,7 @@ body {
 }
 
 #scroll-spacer {
-    height: 1200vh;
+    height: 700vh;
     width: 100%;
 
     pointer-events: none;
