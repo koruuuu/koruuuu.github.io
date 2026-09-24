@@ -1,5 +1,4 @@
-# Koru Web
-
+# Koru Portfolio Web
 An interactive 3D portfolio built with Three.js.
 
 This project is a personal portfolio website designed as a small
