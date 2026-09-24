@@ -40,7 +40,7 @@ const desiredTarget = new THREE.Vector3();
 
 const currentTarget = new THREE.Vector3();
 const timer = new THREE.Timer();
-const CAMERA_SMOOTHNESS = 15;
+const CAMERA_SMOOTHNESS = 2;
 
 export function getScrollProgress() {
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
