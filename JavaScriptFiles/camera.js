@@ -39,8 +39,6 @@ const desiredPosition = new THREE.Vector3();
 const desiredTarget = new THREE.Vector3();
 
 const currentTarget = new THREE.Vector3();
-const timer = new THREE.Timer();
-const CAMERA_SMOOTHNESS = 2;
 
 export function getScrollProgress() {
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
@@ -1017,16 +1015,8 @@ export function initScrollCamera() {
 
 export function updateScrollCamera() {
     if (!scrollCameraActive) return;
-
-    timer.update();
-
-    const delta = Math.min(timer.getDelta(), 0.05);
-
-    // Frame-rate independent smoothing
-    const smoothing = 1 - Math.exp(-CAMERA_SMOOTHNESS * delta);
-
-    camera.position.lerp(desiredPosition, smoothing);
-    currentTarget.lerp(desiredTarget, smoothing);
+    camera.position.lerp(desiredPosition, 0.06);
+    currentTarget.lerp(desiredTarget, 0.06);
 
     camera.lookAt(currentTarget);
 
