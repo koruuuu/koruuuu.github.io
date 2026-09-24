@@ -34,13 +34,13 @@ function applyMobileDistanceAdjustment(position, target) {
     position.add(target);
 }
 
-//Target and position the camera will be next following
+//Target and position the  will be next following
 const desiredPosition = new THREE.Vector3();
 const desiredTarget = new THREE.Vector3();
 
 const currentTarget = new THREE.Vector3();
 const timer = new THREE.Timer();
-const CAMERA_SMOOTHNESS = 8;
+const CAMERA_SMOOTHNESS = 15;
 
 export function getScrollProgress() {
     const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
