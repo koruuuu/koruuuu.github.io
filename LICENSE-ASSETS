@@ -4,8 +4,8 @@ Copyright (c) 2026 Koru
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of the original assets covered by this license, to use, copy, modify, merge,
-publish, and redistribute the assets for personal, educational, artistic,
-or other non-commercial purposes, subject to the following conditions:
+publish, and redistribute those assets for personal, educational, artistic,
+or other purposes, subject to the following conditions:
 
 The original assets may not be sold, sublicensed, or otherwise distributed
 as a standalone commercial product.
@@ -15,8 +15,9 @@ used as part of a commercial product or service that is offered for sale,
 licensed for a fee, or otherwise provided in exchange for monetary
 compensation.
 
-The original assets may be modified and incorporated into derivative works
-for non-commercial purposes.
+The original assets may be modified and incorporated into derivative works.
+However, the original assets themselves, or substantial portions of them,
+may not be sold, licensed, or commercially distributed, even when modified.
 
 The original assets may be used in videos, screenshots, artwork, portfolios,
 tutorials, social media posts, and other media, including monetized media,
@@ -24,11 +25,28 @@ provided that the assets themselves are not being sold, licensed, or
 commercially distributed as the product or a substantial component of the
 product.
 
-The copyright notice and this permission notice shall be included in all
-copies or substantial portions of the original assets.
+This license applies only to the original assets created or provided by
+Koru and identified as such in this repository. It does not apply to new
+original assets independently created by other persons.
+
+Persons using or modifying the original assets retain ownership of their
+own original contributions and newly created assets, subject to the rights
+and restrictions applicable to the original assets incorporated into their
+work.
 
 The original assets may not be represented as original work created by
 another person.
+
+The copyright notice and this permission notice shall be included in all
+copies or substantial portions of the original assets.
+
+THE ORIGINAL ASSETS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE ASSETS OR THE USE OR OTHER
+DEALINGS IN THE ASSETS.
 
 THE ASSETS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
 OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
